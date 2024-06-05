@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: fastrun
+  liquibase:
+    enabled: false
+server:
+  port: 9087

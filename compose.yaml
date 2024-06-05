@@ -1,0 +1,16 @@
+services:
+  mariadb:
+    image: 'mariadb:latest'
+    environment:
+      - 'MARIADB_DATABASE=fastrun'
+      - 'MARIADB_PASSWORD=fastrun123'
+      - 'MARIADB_ROOT_PASSWORD=root123'
+      - 'MARIADB_USER=fastrun'
+    ports:
+      - '13306:3306'
+    container_name: 'fastrun-mariadb'
+  redis:
+    container_name: 'fastrun-redis'
+    image: 'redis:latest'
+    ports:
+      - '16379:6379'
