@@ -3,3 +3,5 @@ spring:
     name: fastrun
   liquibase:
     enabled: true
+server:
+  port: 8081
